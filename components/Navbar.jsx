@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({title}) => {
   return (
     <>
+    <Head>
+        <title>{title ? title + " - Food Valley" : "Food Valley"}</title>
+    </Head>
       <nav className="flex items-center justify-between px-10 py-2 bg-red-200 text-gray-900">
         <div className="flex items-center gap-3">
           <Link legacyBehavior href="/">
