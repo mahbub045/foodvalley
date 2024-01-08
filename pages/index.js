@@ -1,11 +1,13 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ProductItem from "@/components/ProductItem";
+import data from "@/utils/data";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen ">
+      <div className="min-h-screen container">
         <div className="text-center">
           <h2 className="uppercase font-semibold text-red-500 text-3xl p-1">
             Chicken Crisper® Combos
@@ -57,7 +59,14 @@ const Home = () => {
             </svg>
           </button>
         </div>
+        {/* productitem start */}
+        <div className=" px-4 mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {data.products.map((product) => (
+            <ProductItem product={product} key={product.slug} />
+          ))}
+        </div>
       </div>
+      {/* footer start */}
       <Footer />
     </>
   );

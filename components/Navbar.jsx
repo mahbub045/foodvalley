@@ -11,7 +11,7 @@ const Navbar = ({title}) => {
         <div className="flex items-center gap-3">
           <Link legacyBehavior href="/">
             <a className="">
-              <img src="images/logo.png" alt="Logo" className="w-16 h-12" />
+              <img src="/logo.png" alt="Logo" className="w-16 h-12" />
             </a>
           </Link>
           <Link legacyBehavior href="/">
