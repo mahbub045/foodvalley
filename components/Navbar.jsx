@@ -30,19 +30,19 @@ const Navbar = ({ title }) => {
             </a>
           </Link>
           <Link legacyBehavior href="/">
-            <a className="font-medium">MENU</a>
+            <a className="font-medium hover:text-red-600 transition">MENU</a>
           </Link>
           <Link legacyBehavior href="/">
-            <a className="font-medium">REWARDS</a>
+            <a className="font-medium hover:text-red-600 transition">REWARDS</a>
           </Link>
           <Link legacyBehavior href="/">
-            <a className="font-medium">LOCATIONS</a>
+            <a className="font-medium hover:text-red-600 transition">LOCATIONS</a>
           </Link>
           <Link legacyBehavior href="/">
-            <a className="font-medium">GIFT CARD</a>
+            <a className="font-medium hover:text-red-600 transition">GIFT CARD</a>
           </Link>
           <Link legacyBehavior href="/">
-            <a className="font-medium">LOGIN</a>
+            <a className="font-medium hover:text-red-600 transition">LOGIN</a>
           </Link>
         </div>
         <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ const Navbar = ({ title }) => {
             )}
           </a>
           <Link legacyBehavior href="/">
-            <a className="uppercase bg-red-600 text-white font-medium  px-8 py-2 rounded-md">
+            <a className="uppercase bg-red-600 hover:bg-red-700 text-white font-medium  px-8 py-2 rounded-md">
               Order Now
             </a>
           </Link>

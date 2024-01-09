@@ -33,7 +33,7 @@ const Drawer = ({ isOpen, onClose, children }) => {
               {cart.cartItems.length >= 0 && (
                 <span>
                   {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
-                   <span className="mx-1">Item</span>
+                  <span className="mx-1">Item</span>
                 </span>
               )}
             </div>
